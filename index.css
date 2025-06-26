@@ -1,5 +1,7 @@
-html {
+html,
+body {
   box-sizing: border-box;
+  background-color: black;
 }
 
 *,
@@ -8,17 +10,23 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  background: #fff;
-}
-
-#gameContainer {}
-
 #unity-container {
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100vw;
-  height: 100vh;
+  height: 56.25vw;
+  /* 16:9 */
+  max-width: 177.78vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  /* overflow: hidden;
+  width: 100vw;
+  height: 100vh; */
 }
 
 canvas {
