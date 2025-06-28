@@ -58,17 +58,23 @@
     var time = 0;
     var onPrograss = function (progress) {
       if (progress < 0.9) {
+        target2.style.width = progress * 100 + "%";
+      }
+      else {
+
         setInterval(function () {
           if (loaded) { return; }
+          // window.alert(time);
           if (time < 40) {
             time++;
-            target2.style.width = time + "%";
+            target2.style.width = (90 + time) + "%";
           }
           else if (time < 95) {
             time++;
-            target2.style.width = time + "%";
+            target2.style.width = (90 + time) + "%";
           }
           else {
+            target2.style.width = "100%";
           }
         }, 500);
       }
