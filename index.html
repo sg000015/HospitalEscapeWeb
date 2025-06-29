@@ -39,7 +39,8 @@
       document.body.appendChild(script);
     } else {
       // 모바일일 경우 대체 메시지 표시 (선택)
-      window.document.querySelector('.progress .fill').innerHTML = "모바일에서는 지원되지 않습니다.";
+      window.document.querySelector('.loadingText').innerHTML = "모바일에서는 지원되지 않습니다.";
+      alert("모바일에서는 지원되지 않습니다. PC에서 접속해주세요.");
     }
   </script>
 
